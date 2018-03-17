@@ -1,0 +1,121 @@
+@font-face {
+    font-family: myCustomFont;
+    src: url(./fonts/MyriadPro-LightSemiExtIt.woff);
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Myriad Pro Regular", sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.main-content {
+    width: 901px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.main-header {
+    background: white;
+    margin-bottom: 66px;
+    margin-top: 62px;
+}
+.nav {
+    font-size: 14px;
+    list-style: none;
+    width: 901px;
+    text-align: center;
+    margin: 0 auto;
+}
+.menu-link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.nav a:hover,
+.nav a:focus {
+    color:rgb(155, 205, 90);
+}
+.nav li {
+    display: inline-block;
+}
+.nav li:not(:last-child) {
+    margin-right: 103px;
+}
+.menu {
+    margin-right: 0;
+    padding: 0;
+    font-size: 13px;
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.pictures-blok-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    overflow-wrap: break-word;
+}
+.pictures-blok-list-item {
+    width: 420px;
+    display: inline-block;
+    margin-right: 60px;
+}
+.subtitle {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #626262;
+    margin-bottom: 24px;
+}
+.pictures-blok-title {
+    font-size: 30px;
+    color: #626262;
+    margin-bottom: 45;
+}
+.text {
+    font-size: 14px;
+    color: #626262;
+    margin-bottom: 66px;
+}
+.button {
+    display: block;
+    background: #ffffff;
+    width: 166px;
+    height: 60px;
+    color: #626262;
+    border: 1px solid #626262;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    margin-top: 52px;
+    text-decoration: none;
+    user-select: none;
+    font-family: myCustomFont;
+}
+
+.button:hover {
+    background-color: chartreuse;
+}
+
+.button a:hover,
+.button a:focus {
+    color: chartreuse;
+    }
+
+li:nth-child(2n) {
+    margin-right: 0px;
+}
