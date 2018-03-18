@@ -1,6 +1,7 @@
 @font-face {
-    font-family: myCustomFont;
-    src: url(./fonts/MyriadPro-LightSemiExtIt.woff);
+    font-family: "PlayfairDisplay Regular", "Ubuntu Light", serif;
+    src: url(./fonts/PlayfairDisplay-Regular.ttf);
+    src: url(./fonts/Ubuntu-Light.ttf);
 }
 
 html {
@@ -22,7 +23,7 @@ body {
 .main-content {
     width: 901px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     
 }
 .main-header {
@@ -33,9 +34,10 @@ body {
 .nav {
     font-size: 14px;
     list-style: none;
-    width: 901px;
+    width: 900px;
     text-align: center;
     margin: 0 auto;
+    font-family: PlayfairDisplay Regular;
 }
 .menu-link {
     text-transform: uppercase;
@@ -54,7 +56,7 @@ body {
 .menu {
     margin-right: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
     list-style: none;
 }
 img {
@@ -76,19 +78,22 @@ img {
 }
 .subtitle {
     text-transform: uppercase;
-    font-size: 13px;
-    color: #626262;
+    font-size: 14px;
+    color: #b4ad9e;
     margin-bottom: 24px;
+    font-family: Ubutu-Light;
 }
 .pictures-blok-title {
     font-size: 30px;
     color: #626262;
     margin-bottom: 45;
+    font-family: PlayfairDisplay Regular;
 }
 .text {
     font-size: 14px;
     color: #626262;
     margin-bottom: 66px;
+    font-family: PlayfairDisplay Regular;
 }
 .button {
     display: block;
@@ -104,11 +109,7 @@ img {
     margin-top: 52px;
     text-decoration: none;
     user-select: none;
-    font-family: myCustomFont;
-}
-
-.button:hover {
-    background-color: chartreuse;
+    font-family: PlayfairDisplay Regular;
 }
 
 .button a:hover,
