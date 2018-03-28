@@ -101,7 +101,7 @@ h1:first-letter {
     color: 1abc9c;
 }
 
-/*dobavka*/
+
 ::first-letter {
     color: 1abc9c;
 }
@@ -141,8 +141,6 @@ h1:first-letter {
 }
 
 .caption {
-    /*margin: 0;
-    padding: 0px;*/
     width: 1170px;
     display: inline-block;
     position: relative;
@@ -153,13 +151,17 @@ h1:first-letter {
 .caption-line {
     width: 164px;
     height: 7px;
-    background: #4ec6ab;
+    background: #ffffff;
     position: absolute;
     bottom: 0px;
     left: 50%;
     margin-left: -82px;
 }
 
+.caption-line:hover{
+    color: #4ec6ab;
+    background: #4ec6ab;
+}
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
