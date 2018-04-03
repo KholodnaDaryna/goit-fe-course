@@ -9,9 +9,8 @@ html {
 }
 
 body {
-    width: 1170px;
-    color: #000;
-    background-color: #fff;
+    width: 1600px;
+    background-color: #e9f0fd;
     margin: 0 auto;
 }
 
@@ -24,7 +23,8 @@ img {
 }
 
 .page-header {
-    height: 100px;
+    height: 90px;
+    background: #fff;
 }
 .navigation {
     float: right;
@@ -56,7 +56,7 @@ img {
 
 .site-item a:hover,
 .site-item a:focus {
-    color:rgb(155, 205, 90);
+    color: #1abc9c;
 }
 
 .site-item-active a,
@@ -74,7 +74,7 @@ img {
     vertical-align: middle;
     height: 32px;
     margin-left: 30px;
-    margin-top: 34px;
+    margin-top: 29px;
 }
 
 .logo a {
@@ -98,12 +98,9 @@ h1:first-letter {
 
 
 .navigation li:first-child {
-    color: 1abc9c;
+    color: #1abc9c;
 }
 
-::first-letter {
-    color: 1abc9c;
-}
 
 .navigation li{
     float: left;
@@ -111,3 +108,399 @@ h1:first-letter {
     list-style: none;  
 }
 
+/*основной слайдер*/
+.slider-picture {
+    width: 1600px;
+    height: 600px;
+    position: relative;
+}
+
+/*.slider-picture 
+{
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    background-color: #000;
+    opacity: 52%;
+    margin-top: 36px;
+
+}*/
+
+.slider-text {
+    position: absolute;
+    width: 900px;
+    height: 140px;
+    top: 196px;
+    left: 50%;
+    margin-left: -450px;
+    padding-left: 60px;
+    z-index: 85;
+}
+
+.slider-capture {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 86px;
+    margin: 0px;
+    letter-spacing: -2px;
+}
+
+.slider-under {
+    margin-top: 36px;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    margin: 0px;
+    letter-spacing: -1px;
+}
+
+.slider-arrow-left {
+    position: absolute;
+    top: 224px;
+    left: 245px;
+    height: 104px;
+    width: 104px;
+    z-index: 80;
+}
+
+.slider-arrow-right {
+    position: absolute;
+    top: 224px;
+    right: 245px;
+    height: 104px;
+    width: 104px;
+    z-index: 80;
+}
+
+.slider-arrow-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #54a18f;
+    opacity: 0.651;
+    z-index: 50;
+
+}
+
+.slider-arrow-left .slider-arrow {
+    background: url(../img/arrow-left.png);
+    width: 22px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -19px;
+    margin-left: -11px;
+    z-index: 100;
+}
+
+.slider-arrow-right .slider-arrow {
+    background: url(../img/arrow-right.png);
+    width: 22px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -19px;
+    margin-left: -11px;
+    z-index: 100;
+}
+
+.slider-arrow-left:hover,
+.slider-arrow-right:hover {
+    cursor: pointer;
+}
+
+.slider-arrow-left:hover .slider-arrow-background,
+.slider-arrow-right:hover .slider-arrow-background {
+    opacity: 1;
+}
+  
+.slider-fon {
+    background-color: rgb(0, 0, 2);
+    opacity: 0.522;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 600px;
+    z-index: 73;
+  }
+  
+
+
+/*.button-list {
+    float: left;
+}*/
+section {
+    width: 1600px;
+    height: 680px;
+}
+.caption {
+    margin-top: 100px;
+    margin-bottom: 118px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #515151;
+    position: relative; 
+}
+
+.caption h2 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.caption-line {
+    display: block;
+    background: #1abc9c;
+    width: 164px;
+    height: 8px;
+    margin-top: 30px;
+    position: absolute;
+    left: 720px;
+}
+
+.pictures-block-list {
+    width: 1140px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.pictures-block-list-item {
+    /*float: left;*/
+    position: relative;
+    padding: 0px;
+    list-style: none;
+    width: 255px;
+    height: 324px;
+    margin: 15px;
+    float: left;
+}
+/*не смогла убрать расстояние между pictures-block-list li в 4px, между кнопками*/
+
+.pictures-block-list li:last-child {
+    margin-right: 0px;
+}
+.subtitle-and-price {
+    display: block;
+    width: 255px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.subtitle {
+    width: 202px;
+    height: 40px;
+    background-color: #515151;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+    padding-left: 14px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    text-transform: uppercase;
+    margin: 0px;
+
+}
+.price {
+    width: 53px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+    padding-left: 10px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #8c8c8c;
+
+}
+
+.price p:last-child {
+    margin-right: 0px;
+}
+
+
+.many-buttons {
+    position: absolute;
+    top: 95px;
+    left: 45px;
+    width: 166px;
+    height: 50px;
+    z-index: 100;
+}
+.button-list-2 {
+    position: absolute;
+    top: 148px;
+    left: 45px;
+    width: 166px;
+    height: 50px;
+    z-index: 100;
+    background: #323232 url(../img/telegka.png) center left no-repeat;
+    text-align: left;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.button-list {
+    width: 50px;
+    height: 50px;
+    margin-right: 4px;
+    border: 1px solid #fff;
+    background: transparent;
+
+}
+
+.button-list:hover {
+    cursor: pointer;
+    background-color: #1abc9c;
+}
+
+.button-hart {
+    background: url(../img/hart.png) center center no-repeat;
+}
+
+.button-strelki {
+    background: url(../img/strelki.png) center center no-repeat;
+}
+
+.button-clock {
+    background: url(../img/clock.png) center center no-repeat;
+}
+
+.button-list:last-child {
+    margin-right: 0;
+}
+
+/*.button-list-2 {
+    position: relative;*/
+
+.add-to-cart {
+    /*position: absolute;*/
+    display: inline-block;
+    text-indent: 54px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: -1px;
+
+   
+
+}
+
+
+.button-list img,
+.button-list img:hover,
+.button-list img:focus {
+    background-color: #1abc9c;
+}
+
+.pictures-fon {
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.549;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 255px;
+    height: 284px;
+    z-index: 25;
+  }
+
+  .pictures-fon,
+  .pictures-fon:hover,
+  .pictures-fon:focus {
+      background-color: #737373;
+  }
+  
+
+/*.footer {
+    width: 1600px;
+    height: 90px;
+ 
+}
+.footer-text {
+
+    margin-top: 100px;
+    text-align: center;
+    background-color: #323232;
+    font-family: OpenSans Regular;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #ffffff;
+
+}*/
+
+footer {
+    width: 1600px;
+    padding: 30px 0px;
+    background-color: rgb(50, 50, 50);
+}
+
+  .footer-fon {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(254, 254, 254);
+    line-height: 30px;
+    text-align: center;
+  }
+
+.footer-fon a {
+    color: #46bfa9;
+    text-decoration: none;
+}
+  
+.controls-block {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay:hover .controls-block {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.overlay:hover .subtitle {
+    background: #1abc9c;
+}
+
+.overlay:hover .price {
+    background: #7fd9c7;
+}
