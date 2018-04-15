@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    width: 1600px;
+    width: 100%;
     background-color: #e9f0fd;
     margin: 0 auto;
 }
@@ -23,6 +23,8 @@ img {
 }
 
 .page-header {
+    width: 100%;
+    min-width: 1170px;
     height: 90px;
     background: #fff;
 }
@@ -59,11 +61,6 @@ img {
     color: #1abc9c;
 }
 
-.site-item-active a,
-.site-item-active a:hover,
-.site-item-active a:focus {
-    color: #1abc9c;
-}
 
 .navigation li:last-child {
     margin-right: 0;
@@ -109,31 +106,30 @@ h1:first-letter {
 }
 
 /*основной слайдер*/
-.slider-picture {
-    width: 1600px;
+
+
+.slider-img {
+    width: 100%;
+    min-width: 1170px;
     height: 600px;
-    position: relative;
+    background: url(../img/slaider.png) center center no-repeat;
+    background-size: cover;
+
 }
 
-/*.slider-picture 
-{
-    position: absolute;
-    width: 1600px;
+.slider-picture {
+    width: 100%;
+    min-width: 1170px;
     height: 600px;
-    background-color: #000;
-    opacity: 52%;
-    margin-top: 36px;
+    position: relative;
 
-}*/
+}
 
 .slider-text {
     position: absolute;
-    width: 900px;
-    height: 140px;
-    top: 196px;
+    top: 50%;
     left: 50%;
-    margin-left: -450px;
-    padding-left: 60px;
+    transform: translate(-50%, -50%);
     z-index: 85;
 }
 
@@ -147,6 +143,7 @@ h1:first-letter {
     line-height: 86px;
     margin: 0px;
     letter-spacing: -2px;
+    white-space: nowrap;
 }
 
 .slider-under {
@@ -163,8 +160,9 @@ h1:first-letter {
 
 .slider-arrow-left {
     position: absolute;
-    top: 224px;
-    left: 245px;
+    top: 50%;
+    margin-top: -52px;
+    left: 30px;
     height: 104px;
     width: 104px;
     z-index: 80;
@@ -172,8 +170,9 @@ h1:first-letter {
 
 .slider-arrow-right {
     position: absolute;
-    top: 224px;
-    right: 245px;
+    top: 50%;
+    margin-top: -52px;
+    right: 30px;
     height: 104px;
     width: 104px;
     z-index: 80;
@@ -231,18 +230,16 @@ h1:first-letter {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1600px;
+    width: 100%;
+    min-width: 1170px;
     height: 600px;
     z-index: 73;
   }
   
 
-
-/*.button-list {
-    float: left;
-}*/
 section {
-    width: 1600px;
+    width: 100%;
+    min-width: 1170px;
     height: 680px;
 }
 .caption {
@@ -268,7 +265,8 @@ section {
     height: 8px;
     margin-top: 30px;
     position: absolute;
-    left: 720px;
+    left: 50%;
+    margin-left: -82px;
 }
 
 .pictures-block-list {
@@ -280,7 +278,6 @@ section {
 }
 
 .pictures-block-list-item {
-    /*float: left;*/
     position: relative;
     padding: 0px;
     list-style: none;
@@ -289,7 +286,6 @@ section {
     margin: 15px;
     float: left;
 }
-/*не смогла убрать расстояние между pictures-block-list li в 4px, между кнопками*/
 
 .pictures-block-list li:last-child {
     margin-right: 0px;
@@ -394,11 +390,9 @@ section {
     margin-right: 0;
 }
 
-/*.button-list-2 {
-    position: relative;*/
+
 
 .add-to-cart {
-    /*position: absolute;*/
     display: inline-block;
     text-indent: 54px;
     font-family: "Open Sans";
@@ -410,10 +404,7 @@ section {
     vertical-align: middle;
     letter-spacing: -1px;
 
-   
-
 }
-
 
 .button-list img,
 .button-list img:hover,
@@ -440,27 +431,10 @@ section {
   .pictures-fon:focus {
       background-color: #737373;
   }
-  
-
-/*.footer {
-    width: 1600px;
-    height: 90px;
- 
-}
-.footer-text {
-
-    margin-top: 100px;
-    text-align: center;
-    background-color: #323232;
-    font-family: OpenSans Regular;
-    font-size: 14px;
-    vertical-align: middle;
-    color: #ffffff;
-
-}*/
 
 footer {
-    width: 1600px;
+    width: 100%;
+    min-width: 1170px;
     padding: 30px 0px;
     background-color: rgb(50, 50, 50);
 }

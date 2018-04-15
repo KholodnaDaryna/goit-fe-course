@@ -21,6 +21,9 @@ img {
 
 .clr {
     clear: both;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page-header {
@@ -56,12 +59,6 @@ img {
 
 .site-item a:hover,
 .site-item a:focus {
-    color:rgb(155, 205, 90);
-}
-
-.site-item-active a,
-.site-item-active a:hover,
-.site-item-active a:focus {
     color: #1abc9c;
 }
 
@@ -79,6 +76,8 @@ img {
 
 .logo a {
     text-decoration: none;
+    display: block;
+
 }
 
 h1 {
@@ -130,6 +129,12 @@ h1:first-letter {
     margin: 15px;
 }
 
+.pictures-block-list-item a {
+    display: block;
+    width: 255px;
+    height: 285px;
+}
+
 .pictures-block-list-item:nth-child(4n+4) {
     margin-right: 0px;
 }
@@ -148,18 +153,18 @@ h1:first-letter {
     margin-bottom: 48px;
 }
  
-.caption-line {
+h2:before {
+    content: '';
     width: 164px;
     height: 7px;
-    background: #ffffff;
+    background: #fff;
     position: absolute;
     bottom: 0px;
     left: 50%;
     margin-left: -82px;
 }
 
-.caption-line:hover{
-    color: #4ec6ab;
+.caption:hover h2:before{
     background: #4ec6ab;
 }
 h2 {

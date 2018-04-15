@@ -17,8 +17,7 @@ body {
     color: #626262;
     font-size: 14px;
     line-height: 21px;
-    margin-left: 150px;
-    margin-right: 150px;
+    min-width: 901px;
 }
 .main-content {
     width: 901px;
