@@ -4,19 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <title>Home work 07</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script;Montserrat:400,700;Roboto:300i,400" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
         <nav class="page-nav-container">
          <div class="logo">
-             <a href="#"class="site-logo">Golden</a>
+             <a href="#" class="site-logo">Golden</a>
          </div>
              <ul class="site-navigation">
                <li class="site-item site-item-active"><a href="">home</a></li>
@@ -34,29 +31,40 @@
 
         <ul class="icon-list">
             <li class="features-list-item icon-basket">
-                 <div class="circle"></div>
-                 <div class="icon-list-capture">E-Commerce</div>
-                 <div class="text-block">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</div>
+                <div class="circle"></div>
+                <img class="circle-icon" src="img/basket.png" alt="basket" width="64" height="64">
+                 <h2 class="icon-list-capture">E-Commerce</h2>
+                 <p class="text-block">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
             </li>
             <li class="features-list-item icon-laptop">
                 <div class="circle"></div>
-                <div class="icon-list-capture">Responsive Web</div>
-                <div class="text-block">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</div>
+                <img class="circle-icon" src="img/laptop.png" alt="laptop" width="64" height="64">
+                <h2 class="icon-list-capture">Responsive Web</h2>
+                <p class="text-block">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
             </li>
             <li class="features-list-item icon-locked">
                 <div class="circle"></div>
-                <div class="icon-list-capture">Web Security</div>
-                <div class="text-block">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</div>
+                <img class="circle-icon" src="img/lock.png" alt="lock" width="64" height="64">
+                <h2 class="icon-list-capture">Web Security</h2>
+                <p class="text-block">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
             </li>   
         </ul>
+    
+  </main>
+  <footer>
     <section class="forms">
-        <div class="fon-map"></div>
-        <p class="capture-1">Contact us</p>
+
+        <p class="capture-12">Contact us</p>
         <p class="capture-2">Proin iaculis purus consequat sem cure</p>
-        <div class="name">your name *</div>
-        <div class="subject">subject </div>
-        <div class="message">Your message *</div>
+        <div class="table">
+        <div class="form-table">
+            <input class="text-box" type="text" placeholder="your name*" required>
+            <input class="text-box" type="email" placeholder="your e-mail*" required>
+            <input class="text-box" type="text" placeholder="subject">
+        </div>
+        <textarea class="textarea-box" placeholder="Your message*" required></textarea> 
+        </div>
         <button class="rectangle">Send Message</button>
     </section>
-  </main>    
+  </footer> 
 </html>
