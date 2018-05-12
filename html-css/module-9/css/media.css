@@ -11,7 +11,7 @@
         text-align: left;
     }
 
-    .navigation-container {
+    .site-navigation {
         order: 2;
     }
     .slider-text {
@@ -41,7 +41,7 @@
         text-align: left;
     }
       
-      .navigation-container {
+      .site-navigation {
         order: 2;
 
     }

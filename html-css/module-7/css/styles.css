@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
   }
 
+  body {
+    min-width: 1170px;
+  }
+
   @font-face {
     font-family: 'DancingScript-Regular';
     src: url(../fonts/DancingScript-Regular.woff);
@@ -47,13 +51,15 @@ html {
   }
   
   .page-nav-container {
-    width: 940px;
+    width: 100%;
+    max-width: 1170px;
     margin: 0 auto;
   }
   
   .page-header {
     background-color: #ffffff;
     margin-bottom: 70px;
+    width: 100%;
   }
   
   .page-nav-container {
@@ -121,7 +127,8 @@ html {
 }
 
 .item-block {
-  width: 940px;
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
 
 }
@@ -232,7 +239,6 @@ html {
 }
 footer {
   width: 100%;
-  min-width: 940px;
   padding: 100px 0;
   margin-top: 100px;
   background: #222 url(../img/map.png) center top no-repeat;

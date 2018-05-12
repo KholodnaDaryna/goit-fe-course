@@ -1,7 +1,4 @@
 @media (min-width: 540px) {
-    .icon-list {
-        width: 492px;
-      }
       .icon-list li {
           width: 50%;
       }
@@ -11,6 +8,7 @@
 
     .page-nav-container {
         flex-direction: row;
+        width: 100%;
     }
 
     .logo {
@@ -38,9 +36,6 @@
 }
 
 @media (min-width: 962px) {
-    .icon-list {
-        width: 942px;
-      }
       .icon-list li {
           width: 25%;
       }
@@ -49,7 +44,8 @@
     }
 
     .page-nav-container {
-        width: 940px;
+        width: 100%;
+        max-width: 940px;
         flex-direction: row;
     }
 

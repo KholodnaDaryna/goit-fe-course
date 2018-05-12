@@ -21,8 +21,14 @@ html {
 
   
   .page-header {
+      width: 100%;
       background: url(../img/fon.jpg) center top no-repeat;
+      background-size: cover;
       min-height: 540px;
+      display:  flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
   }
   
   .page-nav-container {
@@ -30,7 +36,16 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex: initial;
     
+  }
+
+  .slider-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: auto;
+
   }
   
   .site-logo {
@@ -115,10 +130,11 @@ html {
   }
 
   .slider-text {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    */
     display: flex;
     align-items:  center;
     flex-direction: column;
@@ -171,7 +187,7 @@ html {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 220px;
+    width: 80%;
     margin: 0 auto 20px;
     justify-content: space-between;
     padding: 0;

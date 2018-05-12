@@ -19,13 +19,19 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
 .page-nav-container {
   width: 1200px;
   margin: 0 auto;
 }
 
 .page-header {
-  background: #e88182 url(../img/slider-min.png) top center no-repeat;
+  background: #e88182 url(../img/banner@2x-min.png) top center no-repeat;
   background-size: cover;
   margin-bottom: 116px;
   height: 1000px;
@@ -42,17 +48,17 @@ img {
 .icon-SHOPPINGCART,.icon-SHOPPINGCART\:regular{background-image:url('../img/header-icons.svg');background-position:0 -18px;background-repeat:no-repeat}
 .icon-SHOPPINGCART-dims{width:18px;height:18px}
 
-.icon-ALARM,.icon-ALARM\:regular{background-image:url('../img/services-icons/icons.svg');background-position:0 0;background-repeat:no-repeat}
+.icon-ALARM,.icon-ALARM\:regular{background-image:url('../img/services-icons.svg');background-position:0 0;background-repeat:no-repeat}
 .icon-ALARM-dims{width:32px;height:31px}
-.icon-BOOK,.icon-BOOK\:regular{background-image:url('../img/services-icons/icons.svg');background-position:0 -31px;background-repeat:no-repeat}
+.icon-BOOK,.icon-BOOK\:regular{background-image:url('../img/services-icons.svg');background-position:0 -31px;background-repeat:no-repeat}
 .icon-BOOK-dims{width:32px;height:32px}
-.icon-HOME,.icon-HOME\:regular{background-image:url('../img/services-icons/icons.svg');background-position:0 -63px;background-repeat:no-repeat}
+.icon-HOME,.icon-HOME\:regular{background-image:url('../img/services-icons.svg');background-position:0 -63px;background-repeat:no-repeat}
 .icon-HOME-dims{width:32px;height:30px}
-.icon-IMAGE,.icon-IMAGE\:regular{background-image:url('../img/services-icons/icons.svg');background-position:0 -93px;background-repeat:no-repeat}
+.icon-IMAGE,.icon-IMAGE\:regular{background-image:url('../img/services-icons.svg');background-position:0 -93px;background-repeat:no-repeat}
 .icon-IMAGE-dims{width:32px;height:32px}
-.icon-LINEGRAPH,.icon-LINEGRAPH\:regular{background-image:url('../img/services-icons/icons.svg');background-position:0 -125px;background-repeat:no-repeat}
+.icon-LINEGRAPH,.icon-LINEGRAPH\:regular{background-image:url('../img/services-icons.svg');background-position:0 -125px;background-repeat:no-repeat}
 .icon-LINEGRAPH-dims{width:32px;height:32px}
-.icon-OK,.icon-OK\:regular{background-image:url('../img/services-icons/icons.svg');background-position:0 -157px;background-repeat:no-repeat}
+.icon-OK,.icon-OK\:regular{background-image:url('../img/services-icons.svg');background-position:0 -157px;background-repeat:no-repeat}
 .icon-OK-dims{width:31px;height:28px}
 
 .icon-facebook,.icon-facebook\:regular{background-image:url('../img/social-icons.svg');background-position:0 0;background-repeat:no-repeat}
@@ -178,6 +184,20 @@ img {
   color: #333333;
   text-transform: uppercase;
   margin-top: 23px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.capture-2::after {
+  content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    transform:translateX(-30px) /*    width/2    */
 }
 
 .icons:nth-last-child(-n + 3) {
@@ -220,34 +240,19 @@ img {
   text-transform: uppercase;
 }
 
-.icon-alarm {
-  background: url(../img/alarm.png) left top no-repeat;
-}
-
-.icon-line-graphe {
-  background: url(../img/line-graphe.png) left top no-repeat;
-}
-
-.icon-computer {
-  background: url(../img/computer.png) left top no-repeat;
-}
-
-.icon-book2 {
-  background: url(../img/book2.png) left top no-repeat;
-}
-
-.icon-home {
-  background: url(../img/home.png) left top no-repeat;
-}
-
-.icon-image {
-  background: url(../img/image.png) left top no-repeat;
-}
 
 .icon-list__item {
   float: left;
   width: 380px;
   cursor: pointer;
+  position: relative;
+}
+
+.icon-list__icon {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: block;
 }
 
 .capture-block {
@@ -321,6 +326,7 @@ img {
 
 .team {
   margin: 0 auto;
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,8 +448,15 @@ img {
   display: block;
 }
 
+@keyframes flyingcards {
+  from {left: 0px; top: 0px;}
+  to {left: -10px; top: -10px;}
+}
+
 .team__card-boys:hover .team__card-content, 
 .team__card-boys:hover .team__card-boys-foto {
+  animation-name: flyingcards;
+    animation-duration: 1s;
   left: -10px;
   top: -10px;
 }
