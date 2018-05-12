@@ -48,18 +48,18 @@ h3 {
 .icon-SHOPPINGCART,.icon-SHOPPINGCART\:regular{background-image:url('../img/header-icons.svg');background-position:0 -18px;background-repeat:no-repeat}
 .icon-SHOPPINGCART-dims{width:18px;height:18px}
 
-.icon-ALARM,.icon-ALARM\:regular{background-image:url('../img/services-icons.svg');background-position:0 0;background-repeat:no-repeat}
-.icon-ALARM-dims{width:32px;height:31px}
-.icon-BOOK,.icon-BOOK\:regular{background-image:url('../img/services-icons.svg');background-position:0 -31px;background-repeat:no-repeat}
-.icon-BOOK-dims{width:32px;height:32px}
-.icon-HOME,.icon-HOME\:regular{background-image:url('../img/services-icons.svg');background-position:0 -63px;background-repeat:no-repeat}
-.icon-HOME-dims{width:32px;height:30px}
-.icon-IMAGE,.icon-IMAGE\:regular{background-image:url('../img/services-icons.svg');background-position:0 -93px;background-repeat:no-repeat}
-.icon-IMAGE-dims{width:32px;height:32px}
-.icon-LINEGRAPH,.icon-LINEGRAPH\:regular{background-image:url('../img/services-icons.svg');background-position:0 -125px;background-repeat:no-repeat}
-.icon-LINEGRAPH-dims{width:32px;height:32px}
-.icon-OK,.icon-OK\:regular{background-image:url('../img/services-icons.svg');background-position:0 -157px;background-repeat:no-repeat}
-.icon-OK-dims{width:31px;height:28px}
+.icon-alarm,.icon-alarm\:regular{background-image:url('../img/services-icons.svg');background-position:0 0;background-repeat:no-repeat}
+.icon-alarm-dims{width:32px;height:31px}
+.icon-book,.icon-book\:regular{background-image:url('../img/services-icons.svg');background-position:0 -31px;background-repeat:no-repeat}
+.icon-book-dims{width:32px;height:32px}
+.icon-home,.icon-home\:regular{background-image:url('../img/services-icons.svg');background-position:0 -63px;background-repeat:no-repeat}
+.icon-home-dims{width:32px;height:30px}
+.icon-image,.icon-image\:regular{background-image:url('../img/services-icons.svg');background-position:0 -93px;background-repeat:no-repeat}
+.icon-image-dims{width:32px;height:32px}
+.icon-linegraphe,.icon-linegraphe\:regular{background-image:url('../img/services-icons.svg');background-position:0 -125px;background-repeat:no-repeat}
+.icon-linegraphe-dims{width:32px;height:32px}
+.icon-ok,.icon-ok\:regular{background-image:url('../img/services-icons.svg');background-position:0 -157px;background-repeat:no-repeat}
+.icon-ok-dims{width:31px;height:28px}
 
 .icon-facebook,.icon-facebook\:regular{background-image:url('../img/social-icons.svg');background-position:0 0;background-repeat:no-repeat}
 .icon-facebook-dims{width:13px;height:26px}
