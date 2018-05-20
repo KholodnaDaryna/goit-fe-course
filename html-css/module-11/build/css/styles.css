@@ -829,26 +829,23 @@ main .caption-line {
 .team-container .team .card-boys .card-content .many-buttons .button-list svg {
   display: block;
   fill: #f38181;
+  height: 26px;
 }
 
 .team-container .team .card-boys .card-content .many-buttons .button-facebook .social-icon {
   width: 56px;
-  height: 56px;
 }
 
 .team-container .team .card-boys .card-content .many-buttons .button-twitter .social-icon {
   width: 56px;
-  height: 56px;
 }
 
 .team-container .team .card-boys .card-content .many-buttons .button-pinterest .social-icon {
   width: 56px;
-  height: 56px;
 }
 
 .team-container .team .card-boys .card-content .many-buttons .button-instagram .social-icon {
   width: 56px;
-  height: 56px;
 }
 
 .footer {
