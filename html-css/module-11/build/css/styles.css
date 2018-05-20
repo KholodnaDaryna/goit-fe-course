@@ -813,6 +813,10 @@ main .caption-line {
   background-color: #f38181;
 }
 
+.team-container .team .card-boys .card-content .many-buttons .button-list:hover svg {
+  fill: #fff;
+}
+
 .team-container .team .card-boys .card-content .many-buttons .button-list span {
   display: block;
   position: absolute;
@@ -822,8 +826,27 @@ main .caption-line {
   transform: translateY(-50%) translateX(-50%);
 }
 
-.team-container .team .card-boys .card-content .many-buttons .button-facebook .social-icon {
+.team-container .team .card-boys .card-content .many-buttons .button-list svg {
   display: block;
+  fill: #f38181;
+}
+
+.team-container .team .card-boys .card-content .many-buttons .button-facebook .social-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.team-container .team .card-boys .card-content .many-buttons .button-twitter .social-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.team-container .team .card-boys .card-content .many-buttons .button-pinterest .social-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.team-container .team .card-boys .card-content .many-buttons .button-instagram .social-icon {
   width: 56px;
   height: 56px;
 }
