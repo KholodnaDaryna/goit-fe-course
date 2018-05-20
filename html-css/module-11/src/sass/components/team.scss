@@ -1,0 +1,191 @@
+
+@keyframes flyingcards {
+  from {left: 0px; top: 0px;}
+  to {left: -10px; top: -10px;}
+}
+
+.team-container {
+  .main-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    width: 980px;
+    text-align: center;
+    color: $mainTextColor;
+    margin-top: 90px;
+    margin: 55px auto 74px;
+  }
+  .team {
+    margin: 0 auto;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1200px;
+  
+    .card-boys {
+      position: relative;
+      padding: 0px;
+      list-style: none;
+      width: 380px;
+      height: 570px;
+      margin: 15px;
+      float: left;  
+      display: block;
+  
+      &:first-child {
+        margin-left: 0px;
+      }
+      
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      &:hover {
+        .card-content {
+          display: block;
+        }
+
+        .card-content, 
+        .card-boys-foto {
+          animation-name: flyingcards;
+          animation-duration: 1s;
+          left: -10px;
+          top: -10px;
+        }
+      }
+  
+      .card-fon {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 380px;
+        height: 470px;
+        z-index: 1;
+        background: $teamCardfonColor; 
+      }
+      .card-boys-foto {
+        z-index: 2;
+        position: absolute;
+        width: 380px;
+        height: 470px;
+      }
+
+      p {
+        display: block;
+        text-align: center;
+        width: 100%;  
+      }
+
+      .man-name {
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: $teamMenNameColor;
+        text-align: center;
+        margin: 0 auto;
+        top: 500px;
+      }
+      
+      .profession {
+        position: absolute;
+        font-family: 'Roboto Light Italic', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+        color: $teamProfessionColor;
+        text-align: center;
+        margin: 0 auto;
+        top: 528px;
+      }
+
+      .card-content {
+        position: absolute;
+        width: 380px;
+        height: 470px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        display: none;
+          
+        .card-gradient {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 380px;
+          height: 470px;
+          background-image: -moz-linear-gradient($cardGradient);
+          background-image: -webkit-linear-gradient($cardGradient);
+          background-image: -ms-linear-gradient($cardGradient);
+          z-index: 2;
+          opacity: 0.65;
+          }
+
+          .many-buttons {
+          position: absolute;
+          top: 210px;
+          left: 79px;
+          width: 224px;
+          height: 56px;
+          z-index: 3;
+          background: $manyButtonsBackground;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+
+          .button-list {
+            position: relative;
+            width: 56px;
+            height: 56px;
+            margin: 0px;
+            padding: 0px;
+            border-right: 1px solid $manyButtonsBorderColor;
+            background-color: $manyButtonsBackground;
+            display: block;
+
+            &:hover {
+              cursor: pointer;
+              background-color: $manyButtonsBackgroundHover;
+
+              svg {
+                fill: #fff;
+              }
+            }
+            
+            span {
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translateY(-50%) translateX(-50%);
+                  -ms-transform: translateY(-50%) translateX(-50%);
+                      transform: translateY(-50%) translateX(-50%)
+            }
+
+            svg {
+              display: block;
+              fill: #f38181;
+              height: 26px;
+              width: 56px;
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

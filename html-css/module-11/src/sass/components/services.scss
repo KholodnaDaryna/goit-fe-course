@@ -1,0 +1,90 @@
+.services-container {
+    .icon-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 1180px;
+      padding: 0;
+      margin: 66px auto;
+  
+      .item {
+        width: 325px;
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            display: block;
+        }
+  
+        .capture {
+          position: absolute;
+          margin-left: 84px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: $mainCaptureColor;
+          text-transform: uppercase;
+        }
+        .text-block {
+          margin-left: 84px;
+          margin-top: 24px;
+          margin-bottom: 100px;
+          display: block;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 24px;
+          color: $servicesTextColor;
+        }
+
+        .icon-creativity {
+            @extend %icon;
+            background: url(../img/icons/creativity.png);
+        }
+
+        .icon-csshtml {
+            @extend %icon;
+            background: url(../img/icons/csshtml.png);
+        }
+
+        .icon-digital {
+            @extend %icon;
+            background: url(../img/icons/digital.png);
+        }
+
+        .icon-photography {
+            @extend %icon;
+            background: url(../img/icons/photography.png);
+        }
+
+        .icon-seo {
+            @extend %icon;
+            background: url(../img/icons/seo.png);
+        }
+
+        .icon-webdesign {
+            @extend %icon;
+            background: url(../img/icons/webdesign.png);
+        }
+    
+
+    
+    
+    
+
+      }  
+    }
+}
