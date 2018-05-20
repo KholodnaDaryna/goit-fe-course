@@ -822,6 +822,12 @@ main .caption-line {
   transform: translateY(-50%) translateX(-50%);
 }
 
+.team-container .team .card-boys .card-content .many-buttons .button-facebook .social-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
